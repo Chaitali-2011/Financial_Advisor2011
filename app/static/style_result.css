@@ -1,0 +1,102 @@
+.homepage
+{
+	position: relative;
+	top: 15%;
+	left: 5%;
+	transform: translate(-50%,-50%);
+	outline: none;	
+	font-weight: ;
+	color: white;
+	font-size: 18px;
+	text-decoration: none;
+	margin-bottom: 20px;
+}
+
+.bodyclass
+{
+	background="../static/background.jpg";
+	background: rgba(0,0,0,0);
+}
+
+.summary
+{
+	margin-top: 30px;
+	position: relative;
+	top: 20%;
+	left: 5%;
+	margin-bottom: 15px;
+}
+
+.topnav {
+    background: #fff;
+    position: fixed;
+    margin: 10px 50px 10px 50px;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 50px;
+    z-index: 333;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease-in-out 0s;
+    border-radius: 5px;
+}
+
+.container
+{
+	position: relative;
+	box-sizing: border-box;
+	outline: none;
+	margin-bottom: 20px;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 50px 0;
+}
+
+td {
+  padding: 10px 0;
+}
+
+.print_details
+{
+	font-family: Cersive;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+}
+
+.labels
+{
+	position: relative;
+	box-sizing: border-box;
+	outline: none;	
+	margin-top: 20px;
+	margin-left: 10%;
+	margin-bottom: 40px;
+}
+
+.myCustomClassName{
+color:green;
+font-size: 1em;
+font-family:arial, helvetica, sans-serif;
+}
+
+.newsbox
+{
+	font-family: Comic Sans MS;
+}
+
+a 
+{
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
