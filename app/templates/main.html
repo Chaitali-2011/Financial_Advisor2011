@@ -1,0 +1,385 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Financial Advisor</title>
+    <link rel="icon" href="{{ url_for('static',filename='img/1icon.png')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/owl.theme.default.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='font-awesome/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/animate.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/modal-video.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/Style.css')}}">
+</head>
+
+<header id="header" class="header header-hide ">
+    <div class="container">
+        <div id="logo" class="pull-left">
+            <h1><a href="#body" class="scrollto"><span>Financial</span>Advisor</a></h1>
+        </div>
+        <nav id="nav-menu-container">
+            <ul class="nav-menu">
+                <li class="menu-active"><a href="#hero">Home</a></li>
+                <li><a href="#get-started">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#screenshots">Screenshots</a>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="{{ url_for('login_page') }}">Login</a></li>
+                <li><a href="{{ url_for('register_page') }}">Register</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <section id="hero" class="wow fadeIn">
+        <div class="hero-container py-lg-5">
+            <h1>Your Personal Financial Advisor</h1>
+            <h2>Elegant application for save your money and expenses &amp; more...</h2>
+            <a href="#get-started" class="btn-get-started scrollto">Get Started</a>
+            <!--<div class="btns">
+                <a href="#"><i class="fa fa-apple fa-3x"></i> App Store</a>
+                <a href="#"><i class="fa fa-play fa-3x"></i> Google Play</a>
+                <a href="#"><i class="fa fa-windows fa-3x"></i> windows</a>
+            </div>-->
+        </div>
+    </section>
+
+    <section id="get-started" class="padd-section text-center wow fadeInUp">
+
+        <div class="container">
+            <div class="section-title text-center">
+
+                <h2>Financial Advisor</h2>
+                <p class="separator">Simple system for save your savings to complete your future needs.</p>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-block">
+                        <img src="{{ url_for('static',filename='img/3plans.png')}}" style="height: 110px; width: 110px;" alt="img" class="img-fluid">
+                        <h4>Plan salary</h4>
+                        <p>Enter your salary and get expenditure plan</p>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-block">
+
+                        <img src="{{ url_for('static',filename='img/4tracke.jpg')}}" style="height: 110px; width: 110px;" alt="img" class="img-fluid">
+                        <h4>manage and track expenses</h4>
+                        <p>Get effective expenditure plan and follow instruction to track expenses and examine graphs. </p>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-block">
+
+                        <img src="{{ url_for('static',filename='img/5Examineg.png')}}" style="height: 110px; width: 110px;" alt="img" class="img-fluid">
+                        <h4>Examine expenditure graph </h4>
+                        <p>Track expenses and examine daily and monthly expenses via graph .</p>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="features" class="padd-section text-center wow fadeInUp">
+
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Amazing Features.</h2>
+                <p class="separator">Specialities Of Financial Advisor .</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 col-lg-4">
+                    <div class="feature-block">
+                        <img src="{{ url_for('static',filename='img/6featuresavem.png')}}" alt="img" class="img-fluid">
+                        <h4>Save Money</h4>
+                        <p>Save money by following monthly chart .</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-4">
+                    <div class="feature-block">
+                        <img src="{{ url_for('static',filename='img/7featureeasyu.jpg')}}" alt="img" class="img-fluid">
+                        <h4>easy to use</h4>
+                        <p>Easier and Simplest way to use .</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-4">
+                    <div class="feature-block">
+                        <img src="{{ url_for('static',filename='img/8featuremanagem.png')}}" alt="img" class="img-fluid">
+                        <h4>Actively plan & manage money</h4>
+                        <p>Enter monthly salary, get expenditure plan, and manage money equally .</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-4">
+                    <div class="feature-block">
+                        <img src="{{ url_for('static',filename='img/9featuretrackm.png')}}" alt="img" class="img-fluid">
+                        <h4>Tracking your money.</h4>
+                        <p>Track each transaction for  effective expenditure plan .</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <div class="feature-block">
+                        <img src="{{ url_for('static',filename='img/10featureuserf1.png')}}" "../static/img/" alt="img" class="img-fluid">
+                        <h4>User friendly</h4>
+                        <p>Everyone can use it without any speciality .</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-4">
+                    <div class="feature-block">
+                        <img src="{{ url_for('static',filename='img/6featuresavem.png')}}" alt="img" class="img-fluid">
+                        <h4>App store support</h4>
+                        <p>Later on it will be available in app store .</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="screenshots" class="padd-section text-center wow fadeInUp">
+
+            <div class="container">
+                <div class="section-title text-center">
+                    <h2>App Gallery</h2>
+                    <p class="separator">Gallery of Financial Advisor .</p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="owl-carousel owl-theme">
+
+                    <div><img src="{{ url_for('static',filename='img/imggg/1i.png')}}" alt="img"></div>
+                    <div><img src="{{ url_for('static',filename='img/imggg/2i.png')}}" alt="img"></div>
+                    <div><img src="{{ url_for('static',filename='img/imggg/3i.png')}}" alt="img"></div>
+                    <div><img src="{{ url_for('static',filename='img/imggg/4i.png')}}" alt="img"></div>
+                    <div><img src="{{ url_for('static',filename='img/imggg/5i.png')}}" alt="img"></div>
+                    <div><img src="{{ url_for('static',filename='img/imggg/6i.png')}}" alt="img"></div>
+                </div>
+            </div>
+
+        </section>
+        <!--<section id="pricing" class="padd-section text-center wow fadeInUp">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h2>Meet With Price</h2>
+                    <p class="separator">Integer cursus bibendum augue ac cursus .</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="block-pricing">
+                            <div class="table">
+                                <h4>basic</h4>
+                                <h2>$29</h2>
+                                <ul class="list-unstyled">
+                                    <li><b>4 GB</b> Ram</li>
+                                    <li><b>7/24</b> Tech Support</li>
+                                    <li><b>40 GB</b> SSD Cloud Storage</li>
+                                    <li>Monthly Backups</li>
+                                    <li>Palo Protection</li>
+                                </ul>
+                                <div class="table_btn">
+                                    <a href="#" class="btn"><i class="fa fa-shopping-cart"></i> Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="block-pricing">
+                            <div class="table">
+                                <h4>PERSONAL</h4>
+                                <h2>$29</h2>
+                                <ul class="list-unstyled">
+                                    <li><b>4 GB</b> Ram</li>
+                                    <li><b>7/24</b> Tech Support</li>
+                                    <li><b>40 GB</b> SSD Cloud Storage</li>
+                                    <li>Monthly Backups</li>
+                                    <li>Palo Protection</li>
+                                </ul>
+                                <div class="table_btn">
+                                    <a href="#" class="btn"><i class="fa fa-shopping-cart"></i> Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="block-pricing">
+                            <div class="table">
+                                <h4>BUSINESS</h4>
+                                <h2>$29</h2>
+                                <ul class="list-unstyled">
+                                    <li><b>4 GB</b> Ram</li>
+                                    <li><b>7/24</b> Tech Support</li>
+                                    <li><b>40 GB</b> SSD Cloud Storage</li>
+                                    <li>Monthly Backups</li>
+                                    <li>Palo Protection</li>
+                                </ul>
+                                <div class="table_btn">
+                                    <a href="#" class="btn"><i class="fa fa-shopping-cart"></i> Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="block-pricing">
+                            <div class="table">
+                                <h4>profeesional</h4>
+                                <h2>$29</h2>
+                                <ul class="list-unstyled">
+                                    <li><b>4 GB</b> Ram</li>
+                                    <li><b>7/24</b> Tech Support</li>
+                                    <li><b>40 GB</b> SSD Cloud Storage</li>
+                                    <li>Monthly Backups</li>
+                                    <li>Palo Protection</li>
+                                </ul>
+                                <div class="table_btn">
+                                    <a href="#" class="btn"><i class="fa fa-shopping-cart"></i> Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+        <section id="contact" class="wow fadeInUp">
+            <div class="container">
+                <div class="section-header section-title text-center">
+                    <h2 id="">Feedback Us</h2>
+                    <p class="separator">Please provide us with your feedback so we can continue to improve</p>
+                </div>
+
+                <div class="row contact-info">
+
+                    <div class="col-md-4">
+                        <div class="contact-address">
+                            <i class="ion-ios-location-outline"></i>
+                            <h3>Address</h3>
+                            <address>Ahmedabad,Gujarat,India</address>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="contact-phone">
+                            <i class="ion-ios-telephone-outline"></i>
+                            <h3>Phone Number</h3>
+                            <p><a href="tel:+155895548855">+91 9408905901</a></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="contact-email">
+                            <i class="ion-ios-email-outline"></i>
+                            <h3>Email</h3>
+                            <p><a href="mailto:chaitalivaghasiya100@gmail.com">chaitalivaghasiya100@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container mb-4">
+                <iframe src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=new%20naroda+(Financial%20Advisor)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=B&amp;output=embed" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+            <div class="container">
+                <div class="form">
+                    <div id="sendmessage">Your message has been sent. Thank you!</div>
+                    <div id="errormessage"></div>
+                    <form action="/feedback_page/" method="post" role="form" class="contactForm">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="text" name="feedback_name" class="form-control" id="feedback_name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="email" class="form-control" name="feedback_email" id="feedback_email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                <div class="validation"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="feedback_subject" id="feedback_subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                            <div class="validation"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="feedback_message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                            <div class="validation"></div>
+                        </div>
+                        <div class="text-center"><button type="submit">Send Message</button></div>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-4">
+                        <div class="footer-logo">
+                            <a class="navbar-brand" href="#">Financial Advisor</a>
+                            <p>The invention is about Finance Advisor system in which a user fill certain information to plan monthly budget. Financial Advisor is your personal finance planner that helps you save money, plan your budget and track spending. </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="list-menu">
+                            <h4>Company</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#get-started">About Us</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="list-menu">
+                            <h4>Navigations</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#contact">Contact Us</a></li>
+                                <li><a href="login.html">How it Works?</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+            <div class="copyrights">
+                <div class="container">
+                    <p>&copy; Copyrights Financial Advisor. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script type="text/javascript" src="{{ url_for('static',filename='js/jquery.min.js')}}"></script>
+        <script type="text/javascript" src="{{ url_for('static',filename='js/jquery-migrate.min.js')}}"></script>
+        <script type="text/javascript" src="{{ url_for('static',filename='js/bootstrap.min.js')}}"></script>
+        <script type="text/javascript" src="{{ url_for('static',filename='js/hoverIntent.js')}}"></script>
+        <script type="text/javascript" src="{{ url_for('static',filename='js/superfish.min.js')}}"></script>
+        <script type="text/javascript" src="{{ url_for('static',filename='js/easing.min.js')}}"></script>
+        <script type="text/javascript" src="{{ url_for('static',filename='js/owl.carousel.min.js')}}"></script>
+        <script type="text/javascript" src="{{ url_for('static',filename='js/wow.min.js')}}"></script>
+        <script type="text/javascript" src="{{ url_for('static',filename='js/main.js')}}"></script>
+        <script type="text/javascript" src="{{ url_for('static',filename='js/contactform.js')}}"></script>
+    </section>
+</body>
+
+</html>

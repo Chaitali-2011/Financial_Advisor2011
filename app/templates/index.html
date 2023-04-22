@@ -1,0 +1,95 @@
+{% extends 'header.html' %}
+
+{% block body %}
+<div class="wrapper ">
+    <div class="sidebar" data-color="purple" data-background-color="white" data-image="{{url_for('static', filename='img/sidebar-1.jpg')}}">
+        <div class="logo"><a class="simple-text logo-normal">Financial Advisor</a></div>
+        <div class="sidebar-wrapper">
+            <ul class="nav" role="tablist">
+                <li class="nav-item " role="presentation">
+                    <a class="nav-link" href="/dashboard">
+                        <i class="material-icons">dashboard</i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <li class="nav-item active" role="presentation">
+                    <a class="nav-link" href="index.html">
+                        <i class="material-icons">money</i>
+                        <p>Stock Market Prediction</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    {% endblock %}
+    {% block other %}
+    <div class="content">
+        <div class="container-fluid">
+            <div class="tab-content">
+                <div class="tabpanel">
+                    <form action="/plot" method="POST">
+                        <label>Enter Company Sticker Symbol</label>
+                        <select class="form-control" style="width: 30%;" class="searchbox" name="companyname" placeholder="Enter company sticker symbol" required>
+                            <option>AAPL</option>
+                            <option>ACN</option>
+                            <option>ADBE</option>
+                            <option>AMAT</option>
+                            <option>AMD</option>
+                            <option>AMZN</option>
+                            <option>AVGO</option>
+                            <option>BA</option>
+                            <option>BABA</option>
+                            <option>BBY</option>
+                            <option>BMW</option>
+                            <option>BRK.A</option>
+                            <option>CRM</option>
+                            <option>CSCO</option>
+                            <option>CTSH</option>
+                            <option>CTXS</option>
+                            <option>DCM</option>
+                            <option>DIS</option>
+                            <option>EBAY</option>
+                            <option>ERIC</option>
+                            <option>FB</option>
+                            <option>GOOGL</option>
+                            <option>HPQ</option>
+                            <option>IBM</option>
+                            <option>INFY</option>
+                            <option>INTC</option>
+                            <option>INTL</option>
+                            <option>JNPR</option>
+                            <option>LMT</option>
+                            <option>LNKD</option>
+                            <option>MCAF</option>
+                            <option>MSFT</option>
+                            <option>MSI</option>
+                            <option>MZLA</option>
+                            <option>NFLX</option>
+                            <option>NOK</option>
+                            <option>NTAP</option>
+                            <option>NVDA</option>
+                            <option>ORCL</option>
+                            <option>PARC</option>
+                            <option>QCOM</option>
+                            <option>SAP</option>
+                            <option>SNAP</option>
+                            <option>T</option>
+                            <option>TCS</option>
+                            <option>TGT</option>
+                            <option>TIBX</option>
+                            <option>TSLA</option>
+                            <option>TWTR</option>
+                            <option>TXN</option>
+                            <option>VMW</option>
+                            <option>VZ</option>
+                            <option>WMT</option>
+                            <option>YHOO</option>
+                        </select>
+                        <button type="submit" class="btn btn-primary" name="Search" class="ghost" id="signUp">Submit</button>
+                    </form>
+                    <marquee class="bottombar">Stock values are subjected to market risk. Prediction is based on machine learning models. Please invest at your own risk.</marquee>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}

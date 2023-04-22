@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Financial Advisor</title>
+    <link rel="icon" href="{{ url_for('static',filename='img/1icon.png')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='font-awesome/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/Style.css')}}">
+</head>
+
+<header id="header" class="header header-hide ">
+    <div class="container">
+        <div id="logo" class="pull-left">
+            <h1><a href="#body" class="scrollto"><span>Financial</span>Advisor</a></h1>s
+        </div>
+        <nav id="nav-menu-container">
+            <ul class="nav-menu">
+                <li><a href="{{ url_for('main') }}">Home</a></li>
+                <li class="menu"><a role="presentation" href="{{ url_for('login_page') }}">Login</a></li>
+                <li><a role="presentation" href="{{ url_for('register_page') }}">Register</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<body>
+	<p style="margin-top: 20px;"><strong>Your message has been sent. Thank you!</strong></p>
+
+</body>
+</html>
