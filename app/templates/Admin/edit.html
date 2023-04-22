@@ -1,0 +1,82 @@
+{% extends 'Admin/adminheader.html' %}
+
+{% block body %}
+<div class="wrapper ">
+    <div class="sidebar" data-color="purple" data-background-color="white" data-image="{{url_for ('static', filename='img/sidebar-1.jpg') }}">
+        <div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">Financial Advisor</a></div>
+        <div class="sidebar-wrapper">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/Adashboard" data-toggle="tooltip" title="Admin Dashboard">
+                        <i class="material-icons">dashboard</i>
+                        <p>Admin Dashboard</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('user') }}" data-toggle="tooltip" title="Admin Profile">
+                        <i class="material-icons">person</i>
+                        <p>Admin Profile</p>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link " href="{{ url_for('tables') }}" data-toggle="tooltip" title="User Table">
+                        <i class="material-icons">content_paste</i>
+                        <p>User Table</p>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="{{ url_for('feedback_table') }}" data-toggle="tooltip" title="Feedback Table">
+                        <i class="material-icons">feedback</i>
+                        <p>Feedback Table</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    {% endblock %}
+    {% block other %}
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header card-header-primary">
+                            <h4 class="card-title">Edit <b>User </b>{{user.id}} : {{user.username}}</h4>
+                        </div>
+                        <div class="card-body">
+                            <form action="/tables/edit/{{user.id}}" method="POST">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="bmd-label-floating">Username</label>
+                                                <input type="text" name="username" id="username" value="{{user.username}}" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="bmd-label-floating">Email</label>
+                                                <input type="text" name="email" id="email" value="{{user.email}}" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="bmd-label-floating">Password</label>
+                                                <input type="text" name="password" id="password" value="{{user.password}}" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary pull-right" value="Save">Save</button>
+
+                                    <div class="clearfix"></div>
+                                </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}

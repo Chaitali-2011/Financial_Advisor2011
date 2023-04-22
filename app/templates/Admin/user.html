@@ -1,0 +1,89 @@
+{% extends 'Admin/adminheader.html' %}
+
+{% block body %}
+<div class="wrapper ">
+    <div class="sidebar" data-color="purple" data-background-color="white" data-image="{{url_for ('static', filename='img/sidebar-1.jpg') }}">
+        <div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">Financial Advisor</a></div>
+        <div class="sidebar-wrapper">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/Adashboard" data-toggle="tooltip" title="Admin Dashboard">
+                        <i class="material-icons">dashboard</i>
+                        <p>Admin Dashboard</p>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ url_for('user') }}" data-toggle="tooltip" title="Admin Profile">
+                        <i class="material-icons">person</i>
+                        <p>Admin Profile</p>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="{{ url_for('tables') }}" data-toggle="tooltip" title="User Table">
+                        <i class="material-icons">content_paste</i>
+                        <p>User Table</p>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="{{ url_for('feedback_table') }}" data-toggle="tooltip" title="Feedback Table">
+                        <i class="material-icons">feedback</i>
+                        <p>Feedback Table</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    {% endblock %}
+    {% block other %}
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header card-header-primary">
+                            <h4 class="card-title">Edit Profile</h4>
+                            <p class="card-category">Complete your profile</p>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="bmd-label-floating"> Adminname</label>
+                                            <input type="text" placeholder="Admin123" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="bmd-label-floating">Email address</label>
+                                            <input type="text" placeholder="financialadvisor20113@gmail.com" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary pull-right">Update Profile</button>
+                                <div class="clearfix"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-profile">
+                        <div class="card-avatar">
+                            <a href="javascript:;">
+                                <img src="{{ url_for('static', filename='img/profile.jpg') }}" />
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-category text-gray">CEO / Co-Founder</h6>
+                            <h4 class="card-title">Chaitali Vaghasiya</h4>
+                            <p class="card-description">
+                                Admin Of Financial Advisor
+                            </p>
+                            <a href="javascript:;" class="btn btn-primary btn-round">Follow</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
